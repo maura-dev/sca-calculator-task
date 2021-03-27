@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  	<!-- <link rel="stylesheet" href="https://fonts.google.com/specimen/Kumbh+Sans"> -->
+ 	<link rel="stylesheet" type="text/css" href="./styles.css">
+	<title>A simple calculator</title>
+</head>
+<body>
+	<div class="instructions">
+		<p>*Press C to cancel or clear screen</p>
+		<p>*% represents modulo</p>
+	</div>
+	
+	<div class="calc-body">
+		<div class="screen">
+			<div id="question"></div>
+			<div id="answer"></div>
+		</div>
+
+		<div class="keys">
+			<div class="numbers">
+				<div class="digits" id="1" onclick="displayOnScreen(event)">1</div>
+				<div class="digits" id="2" onclick="displayOnScreen(event)">2</div>
+				<div class="digits" id="3" onclick="displayOnScreen(event)">3</div>
+				<div class="digits" id="4" onclick="displayOnScreen(event)">4</div>
+				<div class="digits" id="5" onclick="displayOnScreen(event)">5</div>
+				<div class="digits" id="6" onclick="displayOnScreen(event)">6</div>
+				<div class="digits" id="7" onclick="displayOnScreen(event)">7</div>
+				<div class="digits" id="8" onclick="displayOnScreen(event)">8</div>
+				<div class="digits" id="9" onclick="displayOnScreen(event)">9</div>
+				<div class="digits" id="^2" onclick="displayOnScreen(event)">^2</div>
+				<div class="digits" id="0" onclick="displayOnScreen(event)">0</div>
+				<div class="digits" onclick="clearScreen()">C</div>
+			</div>
+
+			<div class="operators">
+				<div class="digits one" id="+" onclick="displayOnScreen(event)">+</div>
+				<div class="digits one" id="-" onclick="displayOnScreen(event)">-</div>
+				<div class="digits one" id="*" onclick="displayOnScreen(event)">x</div>
+				<div class="digits one" id="/" onclick="displayOnScreen(event)">/</div>
+				<div class="digits one" id="%" onclick="displayOnScreen(event)">%</div>
+				<div class="digits one" id="." onclick="displayOnScreen(event)">.</div>
+				<div class="digits one equal" id="=" onclick="printAnswer()">=</div>
+
+
+			</div>
+		</div>
+	</div>
+
+	<script  src="./script.js"></script>
+</body>
+</html>

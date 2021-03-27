@@ -1,0 +1,158 @@
+*{
+	box-sizing: border-box;
+}
+
+html,body{
+	scroll-behavior: smooth;                            
+	margin: 0;
+	padding: 0;
+	background-color: black;
+}
+
+.instructions{
+	color:red;
+	font-weight: 400;
+	text-align: center;
+}
+
+#question,
+#answer{
+	font-size: 25px;
+	font-weight: 700;
+	margin-top: 7px;
+}
+
+#answer{
+	text-align: right;
+	margin-right:10px;
+}
+
+
+.calc-body{
+	width: 50%;
+	height: 70vh;
+	display: block;
+	margin:5vh auto 15vh auto;
+	background-color:  hsl(219, 30%, 18%);
+	border-radius: 10px;
+	box-shadow: 4px 4px 4px 4px hsl(218, 28%, 13%);
+	padding: 20px;
+	padding-top: 40px;
+}
+
+.screen{
+	height:25%;
+	width:90%;
+	margin: auto;
+	border-radius:10px;
+	background-color: lightslategray;
+	border:2px solid  hsl(219, 30%, 18%);
+}
+
+.keys{
+	height:70%;
+	display:flex;
+	flex-direction: row;
+	cursor: pointer;
+}
+
+.numbers{
+	width:60%;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.operators{
+	width:30%;
+	margin-left: 30px;
+	display:flex; 
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.digits{
+	background-color:hsl(0, 0%, 100%);
+	color: hsl(219, 30%, 18%);
+	border-radius:10px;
+	width:20%;
+	height:20%;
+	padding:20px;
+	text-align: center;
+	margin:3%;
+	box-shadow: 4px 4px 4px 4px hsl(218, 28%, 13%);
+	font-size: 25px;
+	font-weight: 700;
+	padding-bottom: 5px;
+}
+
+.one{
+	width: 40%;
+	margin:5%;
+}
+
+.equal{
+	width:90%;
+}
+
+@media only screen and (max-width:900px){
+
+	.calc-body{
+		width: 60%;
+	}
+	.digits{
+		width:25%;
+		height:20%;
+	}
+
+	.one{
+		width:45%;
+		margin: 2%;
+		margin-top:10px;
+	}
+
+	.equal{
+		width:90%;
+	}
+}
+
+@media only screen and (max-width:700px){
+
+		.calc-body{
+			width: 70%;
+		}
+}
+
+
+@media only screen and (max-width:550px){
+
+		.calc-body{
+			width: 85%;
+		}
+}
+
+
+@media only screen and (max-width:450px){
+
+		.calc-body{
+			width: 95%;
+		}
+}
+
+@media only screen and (max-width:375px){
+
+		.calc-body{
+			width: 98%;
+			padding: 10px;
+		}
+
+		.digits{
+			font-size: 20px;
+		}
+}
+
+
+
+
