@@ -168,7 +168,7 @@ function squared(){
 	}	
 
 	operand.splice(0,operand.length)//removes the content of operand array	
-	//alert(answerLine)
+	alert(answerLine)
 
 }
 
