@@ -165,7 +165,9 @@ function squared(){
 		answerLine.push(answer)
 	} else{
 		answerLine.push("Syntax error")	
-	}	
+	}
+
+        operand.push(answer)	
 
 	//operand.splice(0,operand.length)// removes the content of operand array	
 	//alert(answerLine)
