@@ -163,13 +163,14 @@ function squared(){
 		num1=Number(operand.join(""))
 		answer= num1 * num1
 		answerLine.push(answer)
+               operand.splice(0,operand.length)
 	} else{
 		answerLine.push("Syntax error")	
 	}
 
         operand.push(answer)	
 
-	//operand.splice(0,operand.length)// removes the content of operand array	
+	//removes the content of operand array	
 	//alert(answerLine)
 
 }
